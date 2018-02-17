@@ -1,0 +1,152 @@
+/* apply a natural box layout model to all elements,
+but allowing components to change */
+html {
+  box-sizing: border-box;
+
+
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #A8E6CE;
+
+}
+main {
+  width: 655px;
+  margin: 0 auto;
+  background: #f1f1f1;
+  padding: 50px 40px 60px 40px;
+  color: #FFAAA6;
+  border: 5px solid #DCEDC2;
+  border-radius: 25px;
+
+}
+
+blockquote{
+  font-family: 'raleway', sans-serif;
+  color: #A8E6CE;
+}
+
+p {
+  font-family: 'raleway', sans-serif;
+}
+
+.cell {
+  color: #FFD3B5;
+}
+
+.phone {
+  color: #A8E6CE;
+  font-size: 70px;
+}
+
+h2 {
+  font-family: 'Playfair+Display';
+  font-size: 40px;
+  padding-bottom: 0;
+}
+h1 {
+  color: #FF8C94;
+  font-family: 'Playfair+Display';
+  font-size: 60px;
+    padding-bottom: 0;
+
+}
+
+h3 {
+  size: 100px;
+  color: blue;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  30% { transform: scale(1); }
+  40% { transform: scale(1.08); }
+  50% { transform: scale(1); }
+  60% { transform: scale(1); }
+  70% { transform: scale(1.05); }
+  80% { transform: scale(1); }
+  400% { transform: scale(1); }
+}
+
+.heart-falling {
+  position: absolute;
+  animation: falling 6s infinite linear;
+  font-size: 80px;
+}
+
+.phone{
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+
+@keyframes falling {
+0% {
+transform: rotate(360deg);
+}
+50% {
+transform: rotate(-360deg);
+}
+100%{
+  bottom: 0px;
+}
+}
+
+.heart-falling:nth-of-type(1) {
+  bottom: 2000px;
+  left: 0%;
+}
+
+.heart-falling:nth-of-type(2) {
+  bottom: 1000px;
+  left: 25%;
+}
+
+.heart-falling:nth-of-type(3) {
+  bottom: 800px;
+  left: 40%;
+}
+
+.heart-falling:nth-of-type(4) {
+  bottom: 1500px;
+  left: 70%;
+}
+
+.heart-falling:nth-of-type(5) {
+  bottom: 800px;
+  left: 90%;
+}
+
+.heart-falling:nth-of-type(6) {
+  bottom: 1300px;
+  left: 65%;
+}
+
+.heart-falling:nth-of-type(7) {
+  bottom: 1900px;
+  left: 88%;
+}
+
+.heart-falling:nth-of-type(8) {
+  bottom: 1900px;
+  left: 33%;
+}
+
+.heart-falling:nth-of-type(9) {
+  bottom: 1900px;
+  left: 21%;
+}
+
+.heart-falling:nth-of-type(10) {
+  bottom: 1900px;
+  left: 10%;
+}
+
+.heart-falling:nth-of-type(11) {
+  bottom: 1900px;
+  left: 18%;
+}
